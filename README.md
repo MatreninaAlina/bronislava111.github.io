@@ -1,2 +1,2 @@
-# project.github.io
+# project2.github.io
 Root repositori
