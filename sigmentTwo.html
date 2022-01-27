@@ -39,27 +39,83 @@
 
       <!-- Togglers -->
       <div class="d-flex ms-auto order-lg-1">
-        <!-- Top navigation toggler -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="bi bi-three-dots-vertical"></i>
-        </button>
 
-        <!-- Offscreen navigation toggler -->
-        <button class="btn shadow-no position-relative center-both text-dark" id="off-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation" data-tor="click:class.toggle(active, {target: body})">
-          <!-- <i class="bi bi-list h4 mb-0 z-index-1 center-both"></i> -->
-          <i class="bi bi-arrow-left-short position-absolute d-flex" data-tor="hover(#off-toggler):reveal(left) delay(100ms) quad"></i>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" data-tor-group="path => hover(#off-toggler):scaleX.to(0) originX(0%) quad delay(/+100ms/);">
-            <path fill="currentColor" d="M2.5 4c0-.3.2-.5.5-.5h10c.3 0 .5.2.5.5s-.2.5-.5.5H3c-.3 0-.5-.2-.5-.5z" />
-            <path fill="currentColor" d="M2.5 8c0-.3.2-.5.5-.5h10c.3 0 .5.2.5.5s-.2.5-.5.5H3c-.3 0-.5-.2-.5-.5z" />
-            <path fill="currentColor" d="M2.5 12c0-.3.2-.5.5-.5h10c.3 0 .5.2.5.5s-.2.5-.5.5H3c-.3 0-.5-.2-.5-.5z" />
-          </svg>
-          <span class="circle circle-md position-absolute bg-opacity-10" data-tor="hover(#off-toggler):[bg(dark) scale.from(0)]"></span>
-        </button>
+
+    <div id="menuToggle">
+      <input type="checkbox" >
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu" class="bg-white shadow pe-7 menu">
+       
+
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="light.html#home">О нас</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="light.html#services">Стартовые комлекты</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="sigment.html#experienceone">Централи</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="sigment.html#skills">Ретрансляторы</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="sigment.html#experience">Управление</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="sigment.html">Охрана дома и улиц</a>
+            </li>
+    
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="sigment.html#block">Cирены</a>
+            </li>
+    
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="sigment.html#my-weapons">Против воды</a>
+            </li>
+    
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="sigment.html#block2">Против пожара</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="light.html#testimonials">Отзывы</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="sigment.html#work-process">Автоматизация</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="light.html#contact">Cвязаться с нами</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="sigmentTwo.html">Проводные системы</a>
+            </li>
+    
+        
+      </ul>
+    </div>
+
+
+
+       
       </div>
 
       <!-- Navigation -->
       <div class="collapse navbar-collapse small order-lg-0" id="topNavbar">
-        <ul class="navbar-nav d-flex w-100 justify-content-evenly px-2 px-lg-7 links-dark">
+        <ul class="navbar-nav d-flex w-100 justify-content-evenly px-2 px-lg-7 links-dark ">
           <li class="nav-item">
               <a class="nav-link" href="tel: 8 (727) 328-95-96"> 8 (727) 328-95-96</a>
           </li>
@@ -78,10 +134,66 @@
             </a>
           </li>
         </ul>
+
+        
       </div>
 
     </div>
   </nav>
+
+
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+    <form class="w-md-80 form-clean inputs-transparent container" data-tor-group=".form-control => !focus:[border(dark) bg(light)];">
+        <div class="mb-2">
+            <label for="contact-name" class="form-label opacity-70">ФИО</label>
+            <input type="text" class="form-control p-3 border-bottom" id="contact-name" aria-describedby="contact-name">
+        </div>
+        <div class="mb-2">
+            <label for="contact-email" class="form-label opacity-70">Email</label>
+            <input type="email" class="form-control p-3 border-bottom" id="contact-email" aria-describedby="contact-email">
+        </div>
+        
+      
+        <div class="mb-2">
+            
+<select class="custom-select form-control p-3 border-bottom">
+    
+    <option selected>Выберите товар</option>
+    <option value="1"><h3>Безпроводные системы безопасности</h3></option>
+    <option value="2">Hub 2 Plus</option>
+    <option value="3">Hub 2</option>
+    <option value="1">Hub Plus</option>
+    <option value="2">Hub</option>
+    <option value="3">ReX</option>
+    <option value="1">ReX-2</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select></div>
+  <button type="submit" class="btn btn-primary btn-arrow py-2 px-3 float-md-end w-100 w-md-auto mt-5">Отправить</button>
+                     
+      </Form>
+    </div>
+  
+  </div>
 
 
 

@@ -39,27 +39,83 @@
 
       <!-- Togglers -->
       <div class="d-flex ms-auto order-lg-1">
-        <!-- Top navigation toggler -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="bi bi-three-dots-vertical"></i>
-        </button>
 
-        <!-- Offscreen navigation toggler -->
-        <button class="btn shadow-no position-relative center-both text-dark" id="off-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation" data-tor="click:class.toggle(active, {target: body})">
-          <!-- <i class="bi bi-list h4 mb-0 z-index-1 center-both"></i> -->
-          <i class="bi bi-arrow-left-short position-absolute d-flex" data-tor="hover(#off-toggler):reveal(left) delay(100ms) quad"></i>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" data-tor-group="path => hover(#off-toggler):scaleX.to(0) originX(0%) quad delay(/+100ms/);">
-            <path fill="currentColor" d="M2.5 4c0-.3.2-.5.5-.5h10c.3 0 .5.2.5.5s-.2.5-.5.5H3c-.3 0-.5-.2-.5-.5z" />
-            <path fill="currentColor" d="M2.5 8c0-.3.2-.5.5-.5h10c.3 0 .5.2.5.5s-.2.5-.5.5H3c-.3 0-.5-.2-.5-.5z" />
-            <path fill="currentColor" d="M2.5 12c0-.3.2-.5.5-.5h10c.3 0 .5.2.5.5s-.2.5-.5.5H3c-.3 0-.5-.2-.5-.5z" />
-          </svg>
-          <span class="circle circle-md position-absolute bg-opacity-10" data-tor="hover(#off-toggler):[bg(dark) scale.from(0)]"></span>
-        </button>
+
+    <div id="menuToggle">
+      <input type="checkbox" >
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu" class="bg-white shadow pe-7 menu">
+       
+
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="light.html#home">О нас</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="light.html#services">Стартовые комлекты</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="sigment.html#experienceone">Централи</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="sigment.html#skills">Ретрансляторы</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="sigment.html#experience">Управление</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="sigment.html">Охрана дома и улиц</a>
+            </li>
+    
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="sigment.html#block">Cирены</a>
+            </li>
+    
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="sigment.html#my-weapons">Против воды</a>
+            </li>
+    
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="sigment.html#block2">Против пожара</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="light.html#testimonials">Отзывы</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="sigment.html#work-process">Автоматизация</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="light.html#contact">Cвязаться с нами</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="sigmentTwo.html">Проводные системы</a>
+            </li>
+    
+        
+      </ul>
+    </div>
+
+
+
+       
       </div>
 
       <!-- Navigation -->
       <div class="collapse navbar-collapse small order-lg-0" id="topNavbar">
-        <ul class="navbar-nav d-flex w-100 justify-content-evenly px-2 px-lg-7 links-dark">
+        <ul class="navbar-nav d-flex w-100 justify-content-evenly px-2 px-lg-7 links-dark ">
           <li class="nav-item">
               <a class="nav-link" href="tel: 8 (727) 328-95-96"> 8 (727) 328-95-96</a>
           </li>
@@ -78,6 +134,8 @@
             </a>
           </li>
         </ul>
+
+        
       </div>
 
     </div>
@@ -136,72 +194,7 @@
     </div>
   
   </div>
-  
-  <!-- Offscreen backdrop -->
-  <div id="offscreen-backdrop" class="z-index-master w-h-100 fixed-top bg-black bg-opacity-50" data-tor="active(body):[fade.in @pointer-events(none;auto)] click:class.remove(active, {target: body})"></div>
-
-  <!-- Offscreen navigation -->
-  <nav id="offscreen-nav" class="overflow-auto position-fixed z-index-master end-0 bg-white shadow w-80 w-sm-auto p-5 pe-8 h-100" data-tor="active(body):pull.left(full)">
-    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-tor="click:class.remove(active, {target: body})" aria-label="Close"></button>
-    <ul class="nav flex-column links-dark nav-style-opacity nav-style-hover-primary" >
-
-        <li class="nav-item">
-            <a class="nav-link transition-unset" href="light.html#home">О нас</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link transition-unset" href="light.html#services">Стартовые комлекты</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link transition-unset" href="sigment.html#experienceone">Централи</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link transition-unset" href="sigment.html#skills">Ретрансляторы</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link transition-unset" href="sigment.html#experience">Управление</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link transition-unset" href="sigment.html">Охрана дома и улиц</a>
-        </li>
-
-
-        <li class="nav-item">
-            <a class="nav-link transition-unset" href="sigment.html#block">Cирены</a>
-        </li>
-
-
-        <li class="nav-item">
-            <a class="nav-link transition-unset" href="sigment.html#my-weapons">Против воды</a>
-        </li>
-
-
-        <li class="nav-item">
-            <a class="nav-link transition-unset" href="sigment.html#block2">Против пожара</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link transition-unset" href="light.html#testimonials">Отзывы</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link transition-unset" href="sigment.html#work-process">Автоматизация</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link transition-unset" href="light.html#contact">Cвязаться с нами</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link transition-unset" href="sigmentTwo.html">Проводные системы</a>
-        </li>
-
-    </ul>
-  </nav>
+ 
 
   <main id="main-content">
       <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -209,7 +202,7 @@
       <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
       <section id="home">
-          <div class="container">
+          <div class="container mt-5">
               <div class="row row-cols-1 row-cols-md-2 center-v min-vh-100">
 
                   <!-- left -->
@@ -225,7 +218,7 @@
                     </h1>
                       <h4 class="h3 font-sans-serif fw-normal  text-darken-xl mb-3">Профессиональная система безопасности  </h4>
                       <!-- Subtitle -->
-                      <h5 class=" font-sans-serif fw-normal  text-darken-xl mb-3">в любое время дня и ночи</h5>
+                      <h5 class=" font-sans-serif fw-normal  text-darken-xl mb-3">любой сложности</h5>
                      
                        <!-- Badge -->
                        <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small mt-5">О компании</div>
@@ -240,7 +233,7 @@
                   <!-- end .col -->
                   <!-- Right Illustration -->
                   <div class="col">
-                      <img src="assets/img/logo .png"  width="100%"/>
+                      <img src="https://i.ibb.co/QNSX4wK/image.png"  width="100%"/>
                   </div>
                   <!-- end .col -->
 
@@ -260,10 +253,10 @@
                   <div class="col">
 
                       <h2 class="mb-4 overflow-hidden mb-5" data-tor-group=".fx => scroll:[@width(0;auto) @visibility(hidden;visible), {start: /10+5/, end: /10+5/}];">
-                          Охрана дома и 
+                          Охрана домов, квартир и любых помещений вашего
                           <span class="text-primary">
 
-                              <span class="text-nowrap"><span class="fx">у</span><span class="fx">л</span><span class="fx">и</span><span class="fx">ц</span>
+                              <span class="text-nowrap"><span class="fx">б</span><span class="fx">и</span><span class="fx">з</span><span class="fx">н</span><span class="fx">е</span><span class="fx">с</span><span class="fx">а</span>
 
                               <span class="text-body text-opacity-30 ms-n1" data-tor="loop:blink">|</span>
                           </span>
@@ -413,7 +406,7 @@
                 <img src="assets/img/Hub 5.JPG" alt="Gallery image 3" class="gallery__img">
             </figure>
             <figure class="gallery__item gallery__item--4">
-                <img src="assets/img/Relay Lock.png" alt="Gallery image 4" class="gallery__img">
+                <img src="https://i.ibb.co/KqWwxtj/Door-Protect-on-door2.jpg" alt="Gallery image 4" class="gallery__img">
             </figure>
             <figure class="gallery__item gallery__item--5">
                 <img src="assets/img/05_Museum_W.jpg" alt="Gallery image 5" class="gallery__img">
@@ -564,13 +557,20 @@
                                 <h4 class="font-sans-serif">
                                     56.000тг
                                 </h4>
-                                <small class="text-secondary">
-                                    <br><br><br>
-                                   </small>
+                                <small ><h6 class="text-secondary font-sans-serif"> Стоимость Оплаты за услуги Компании. </h6>     </small>
+                            </div>
+                            <p class="small">
+                                
+
+Квартира в черте города: от 6.500тг. в месяц.<br>
+
+Квартира за чертой города: от 7.500тг. в месяц.
+
+                            </p>
                             </div>
                             
                         </div>
-                    </div>
+                
 
                     <div class="experience-box row mb-3 fx">
                         <div class="col-md-3 py-2 py-md-5">
@@ -609,16 +609,14 @@
                             <div class="mb-4">
                                 <h5 class="text-primary font-sans-serif">Бизнес.</h5>
                                 <h4 class="font-sans-serif">
-                                   ---
+                                Комплект оборудования рассчитывается индивидуально
                                 </h4>
                                 <small class="text-secondary">
                                    </small>
                                    <p class="small">
                                 
 
-                                    Рассчитывается индивидуально
-                                    После осмотра.
-                                    
+                                  Сумма абонентской платы высчитывается от рабочих часов компании<br> Стоимость 30т/час
                                                                 </p>
                             </div>
                             
@@ -641,7 +639,8 @@
                         <div class="description col-md-9 border-start py-md-5">
                             <div class="mb-4">
                                 <h5 class="text-primary font-sans-serif">2-х комн. Квартира.</h5>
-                                <h4 class="font-sans-serif">88000тг</h4>
+                           
+                                    <h4 class="font-sans-serif"> Сумма за комплект оборудования 88000тг</h4>
                                 <small ><h6 class="text-secondary font-sans-serif"> Стоимость Оплаты за услуги Компании. </h6>     </small>
                             </div>
                             <p class="small">
@@ -687,15 +686,15 @@
                             <div class="mb-4">
                                 <h5 class="text-primary font-sans-serif">Частный дом</h5>
                                 <h4 class="font-sans-serif">
-                                   ---
+                                 Стоимость комплекта оборудования индивидуально под каждого клиента
                                 </h4>
                                 <small class="text-secondary">
                                    </small>
                                    <p class="small">
                                 
-
-                                    Рассчитывается индивидуально
-                                    После осмотра.
+  
+                              Дом в пределах городской  черты 9000тг<br>
+                              Дом за пределами  городской  черты 10500тг
                                     
                                                                 </p>
                             </div>
@@ -811,13 +810,20 @@
                               <h4 class="font-sans-serif">
                                 40.000тг
                               </h4>
-                              <small class="text-secondary">
-                                  <br><br><br>
-                                 </small>
+                              <small ><h6 class="text-secondary font-sans-serif"> Стоимость Оплаты за услуги Компании. </h6>     </small>
+                            </div>
+                            <p class="small">
+                                
+
+Квартира в черте города: от 6.500тг. в месяц.<br>
+
+Квартира за чертой города: от 7.500тг. в месяц.
+
+                            </p>
                           </div>
                           
                       </div>
-                  </div>
+                
 
                   <div class="experience-box row mb-3 fx">
                       <div class="col-md-3 py-2 py-md-5">
@@ -846,31 +852,29 @@
 
                       
                   </div>
-                  <div class="experience-box row mb-3 fx">
-                      <div class="col-md-3 py-2 py-md-5">
-                          <small class="d-inline-block date">
-                           <img class="radius_img" src="assets/img/block10/two.jfif"  width="100%" >
-                             </small>
-                      </div>
-                      <div class="description col-md-9 border-start py-md-5">
-                          <div class="mb-4">
-                              <h5 class="text-primary font-sans-serif">Бизнес.</h5>
-                              <h4 class="font-sans-serif">
-                                 ---
-                              </h4>
-                              <small class="text-secondary">
-                                 </small>
-                                 <p class="small">
-                              
+                  <div class="experience-box row mb-3">
+                    <div class="col-md-3 py-2 py-md-5">
+                        <small class="d-inline-block date">
+                         <img class="radius_img" src="assets/img/block10/two.jfif"  width="100%" >
+                           </small>
+                    </div>
+                    <div class="description col-md-9 border-start py-md-5">
+                        <div class="mb-4">
+                            <h5 class="text-primary font-sans-serif">Бизнес.</h5>
+                            <h4 class="font-sans-serif">
+                            Комплект оборудования рассчитывается индивидуально
+                            </h4>
+                            <small class="text-secondary">
+                               </small>
+                               <p class="small">
+                            
 
-                                  Рассчитывается индивидуально
-                                  После осмотра.
-                                  
-                                                              </p>
-                          </div>
-                          
-                      </div>
-                  </div>
+                              Сумма абонентской платы высчитывается от рабочих часов компании<br> Стоимость 30т/час
+                                                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
               </div>
               <!-- end .col -->
               <!-- My education -->
@@ -888,7 +892,8 @@
                       <div class="description col-md-9 border-start py-md-5">
                           <div class="mb-4">
                               <h5 class="text-primary font-sans-serif">2-х комн. Квартира.</h5>
-                              <h4 class="font-sans-serif">88000тг</h4>
+                              
+                              <h4 class="font-sans-serif"> Сумма за комплект оборудования 88000тг</h4>
                               <small ><h6 class="text-secondary font-sans-serif"> Стоимость Оплаты за услуги Компании. </h6>     </small>
                           </div>
                           <p class="small">
@@ -934,15 +939,15 @@
                           <div class="mb-4">
                               <h5 class="text-primary font-sans-serif">Частный дом</h5>
                               <h4 class="font-sans-serif">
-                                 ---
+                               Стоимость комплекта оборудования индивидуально под каждого клиента
                               </h4>
                               <small class="text-secondary">
                                  </small>
                                  <p class="small">
                               
 
-                                  Рассчитывается индивидуально
-                                  После осмотра.
+                            Дом в пределах городской  черты 9000тг<br>
+                            Дом за пределами  городской  черты 10500тг
                                   
                                                               </p>
                           </div>
